@@ -1,7 +1,7 @@
 # Carregamento de Data Sets
 import numpy as np
 import pandas as pd
-import requests
+import requests  # bilbioteca para dados não estruturados
 # import pandavro as pdv
 import pymysql
 from sqlalchemy import create_engine
@@ -66,10 +66,10 @@ print(df6.head(2))
 # Acessando o dado pelo S#
 s3_uri = "s3://machine-learning-python-cookbook/data.csv"
   Credenciais)
-       ACCESS_KEY_ID = "xxxxxxxxxxxxx"
-       SECRET_ACCESS_KEY = "xxxxxxxxxxxxxxxx"
+       ACCESS_KEY_ID= "xxxxxxxxxxxxx"
+       SECRET_ACCESS_KEY= "xxxxxxxxxxxxxxxx"
        # gerando o data frame a partir do S#
-       df7 = pd.read_csv(s3_uri, storage_options={
+       df7= pd.read_csv(s3_uri, storage_options={
     "key": ACCESS_KEY_ID,
     "secret": SECRET_ACCESS_KEY,
 }
