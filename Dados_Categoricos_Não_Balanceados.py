@@ -36,7 +36,7 @@ i_classe1_reduzida = np.random.choice(i_classe1, size=n_classe0, replace=False)
 print(i_classe1_reduzida)
 # Juntando a matriz e classe 0 com a matriz subamostrada
 print(np.vstack((features[i_classe0, :],
-      features[i_classe1_reduzida, :]))[0:5])
+                 features[i_classe1_reduzida, :]))[0:5])
 # Aumentando a classe 1
 i_classe0_aumenta = np.random.choice(i_classe0, size=n_classe1, replace=True)
 print(i_classe0_aumenta)
