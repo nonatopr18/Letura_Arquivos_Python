@@ -56,7 +56,7 @@ print([(texto_dados[i], similaridade_coseno[i])
 # Gerando a NLP pipeline para rodar os sentimentos e analises
 classifidador = pipeline("sentiment-analysis")
 # Classificar algum texto
-sentimento1 = classifidador("Dona Nilce gosta de misa")
-sentimento2 = classifidador("Dona Nilce vende marmita")
+sentimento1 = classifidador("Alencar é uber")
+sentimento2 = classifidador("Nonato comprou um carro")
 print(sentimento1)
 print(sentimento2)
